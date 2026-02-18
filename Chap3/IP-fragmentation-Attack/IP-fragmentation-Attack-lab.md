@@ -28,16 +28,24 @@
 #### 1.2.2 실습 파일/폴더 구조(권장)
 
 
+```
 Chap3/IP-fragmentation-Attack/
-├─ README.md
-├─ IP-fragmentation-Attack-lab.md
-└─ lab-materials/
-├─ manual_frag.py
-├─ overlap_frag.py
-└─ images/
-├─ topology.png
-├─ fragmentation-diagram.png
-└─ overlap-diagram.png
+│
+├── README.md
+├── IP-fragmentation-Attack-lab.md
+├── lab-materials/
+│   ├── manual_frag.py
+│   ├── overlap_frag.py
+│   └── images/
+│       ├── IP-fragmentation_Attack-lab_실험환경.png
+|       ├── IP-fragmentation-Attack-lab_실습환경.png
+│       ├── IP-fragmentation-Attack-lab_전체흐름.png
+|       ├── fragmentation-diagram1.png
+|       ├── fragmentation-diagram2.png
+│       └── overlap-diagram.png
+```
+
+
 
 ## 2. 사전 점검(Pre-check)
 
@@ -334,8 +342,3 @@ netstat -s | egrep -i 'frag|reasm|reassembl|overlap'
 
 ```
 
----
-
-원하시면, 위 문서에 **그림 삽입(이미지 파일명 기준)** 까지 넣어드릴까요?  
-예: `lab-materials/images/topology.png`를 본문에 자동으로 참조하도록 섹션별로 `![...](...)` 링크를 배치해드릴 수 있습니다.
-```
